@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ESTILOS NAV BAR */
+
+body{
+    background-color: #ae92ea;
+    font-size: 16px;
+}
+
+
+.header-nav{
+    background-color: #806bae;
+    max-width: 100%;
+    display: flex;
+    margin: 20px;
+    padding: 1em;
+    border-radius: 2em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav .navbar{
+    font-weight: 600;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.header-nav .logo{
+    align-content: center;
+    align-items: center;
+    transition: all 0.3s ease 0s;   
+}
+
+.header-nav .logo:hover{
+    transform: scale(1.2);    
+}
+
+.header-nav .navbar a{
+    text-decoration: none;
+    color: #fff;
+    padding: 1em;
+    transition: all 0.3s ease 0s;
+}
+.header-nav .navbar a:hover{
+    color: #ffd200;
+    transform: scale(1.1);
+}
+
+
+.btnt-skvio button{
+    padding: 14px;
+    background-color: #fff;
+    color: #806bae;
+    font-weight: 600;
+    border-radius: 2em;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease 0s;
+    font-size: 14px;
+    display: flex;
+    float: right;
+}
+
+.btnt-skvio button:hover{
+    background-color: #ffd200;
+    color: #111111;
+    transform: scale(1.2);
+}
+
+.header-nav .socialicons{
+    display: flex;
+    float: left;
+}
+.socialicons a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    transition: all 0.3s ease 0s;
+    padding: 5px;
+}
+.socialicons a:hover{
+    color: #ffd200;
+    transform: scale(1.2);
+}
+
+
+/* ESTILOS NAV MOBILE*/
+
+.menu{
+    display: none;
+}
+
+.header-nav a{
+    text-decoration: none;
+}
+
+.header-nav .overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #B191F0;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.header-nav .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-nav .overlay a{
+    padding: 15px;
+    font-size: 2em;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 600;
+    color: #f1f1f1;
+	text-align: center;
+}
+
+.header-nav .overlay a:hover, 
+.header-nav .overlay a:focus{
+    color: #000;
+}
+
+.header-nav .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 3em;
+}
+.header-nav .menu button{
+    background-color: #fff;
+    color: #ae92ea;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease 0s;
+    font-size: 1em;
+}
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+
+    .header-nav .navbar{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .btnt-skvio{
+        display: none;
+    }
+    .header-nav .logomobile{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .body{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    
+
+}
+
